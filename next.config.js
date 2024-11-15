@@ -4,8 +4,10 @@ const nextConfig = {
     images: {
       unoptimized: true,
     },
-    basePath: '/family-survey-presentation',
-    assetPrefix: '/family-survey-presentation'
+    basePath: '/famgen',
+    assetPrefix: '/famgen',
+    // This is important for GitHub Pages
+    trailingSlash: true
   }
   
   module.exports = nextConfig

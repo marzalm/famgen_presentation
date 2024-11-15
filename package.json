@@ -2,7 +2,7 @@
   "name": "family-survey-presentation",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://marzalm.github.io/family-survey-presentation",
+  "homepage": "https://marzalm.github.io/famgen",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

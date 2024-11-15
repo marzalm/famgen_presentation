@@ -9,3 +9,9 @@ export default function Home() {
     </main>
   );
 }
+
+// Add metadata
+export const metadata = {
+  title: 'Family Survey Presentation',
+  description: 'Results of the family survey',
+}
