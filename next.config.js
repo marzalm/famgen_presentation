@@ -4,9 +4,8 @@ const nextConfig = {
     images: {
       unoptimized: true,
     },
-    basePath: '/famgen',
-    assetPrefix: '/famgen',
-    // This is important for GitHub Pages
+    basePath: '/famgen_presentation',
+    assetPrefix: '/famgen_presentation',
     trailingSlash: true
   }
   

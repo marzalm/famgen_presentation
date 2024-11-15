@@ -2,12 +2,13 @@
   "name": "family-survey-presentation",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://marzalm.github.io/famgen",
+  "homepage": "https://marzalm.github.io/famgen_presentation",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "clean": "rd /s /q .next && rd /s /q out",
     "deploy": "next build && type nul > out/.nojekyll && gh-pages -d out"
   },
   "dependencies": {

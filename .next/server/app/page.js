@@ -148,7 +148,7 @@ module.exports = require("next/dist/shared/lib/server-inserted-html");
 
 /***/ }),
 
-/***/ 86635:
+/***/ 88457:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -225,19 +225,19 @@ const routeModule = new AppPageRouteModule({
 
 /***/ }),
 
-/***/ 79128:
+/***/ 93359:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 31232, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 52987, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 50831, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 56926, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 44282, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 16505, 23))
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 16505, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 31232, 23))
 
 /***/ }),
 
-/***/ 73812:
+/***/ 51474:
 /***/ (() => {
 
 
@@ -260,7 +260,8 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ Home)
+  "default": () => (/* binding */ Home),
+  metadata: () => (/* binding */ metadata)
 });
 
 // EXTERNAL MODULE: external "next/dist/compiled/react/jsx-runtime"
@@ -646,13 +647,18 @@ const SurveyPresentation = ()=>{
 /* harmony default export */ const components_SurveyPresentation = (SurveyPresentation);
 
 ;// CONCATENATED MODULE: ./src/app/page.jsx
-/* __next_internal_client_entry_do_not_use__ default auto */ 
+/* __next_internal_client_entry_do_not_use__ default,metadata auto */ 
 
 function Home() {
     return /*#__PURE__*/ jsx_runtime_.jsx("main", {
         children: /*#__PURE__*/ jsx_runtime_.jsx(components_SurveyPresentation, {})
     });
 }
+// Add metadata
+const metadata = {
+    title: "Family Survey Presentation",
+    description: "Results of the family survey"
+};
 
 
 /***/ }),
@@ -700,7 +706,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   $$typeof: () => (/* binding */ $$typeof),
 /* harmony export */   __esModule: () => (/* binding */ __esModule),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   metadata: () => (/* binding */ e0)
 /* harmony export */ });
 /* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61363);
 
@@ -715,6 +722,8 @@ const __default__ = proxy.default;
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__default__);
+const e0 = proxy["metadata"];
+
 
 /***/ }),
 
@@ -732,7 +741,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [988], () => (__webpack_exec__(86635)));
+var __webpack_exports__ = __webpack_require__.X(0, [988], () => (__webpack_exec__(88457)));
 module.exports = __webpack_exports__;
 
 })();
