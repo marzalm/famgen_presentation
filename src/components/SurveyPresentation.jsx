@@ -243,33 +243,41 @@ const SurveyPresentation = () => {
       </div>
 
       {/* Content Slides */}
-      {sections.map((section, index) => (
-        <div
-          key={index}
-          ref={el => slidesRef.current[index] = el}
-          className="min-h-screen flex items-center justify-center p-8"
-        >
-          <div className={`max-w-5xl w-full bg-white rounded-2xl shadow-xl p-12 transform transition-all duration-1000 ${
-            activeSlide === index ? 'opacity-100 translate-y-0' : 'opacity-50 translate-y-8'
-          }`}>
-            <div className="flex flex-col items-center space-y-8">
-              <div className="text-6xl">{section.icon}</div>
-              <div className="text-center">
-                <h1 className="text-4xl font-bold text-gray-900 mb-2">{section.title}</h1>
-                <h2 className="text-xl text-gray-600">{section.subtitle}</h2>
-              </div>
-              <p className="text-lg text-gray-700 leading-relaxed text-center max-w-2xl">
-                {section.content}
-              </p>
-              {section.chart && (
-                <div className="w-full mt-8">
-                  {section.chart}
-                </div>
-              )}
-            </div>
-          </div>
+      // Dans la section des slides, mettez à jour le style:
+{sections.map((section, index) => (
+  <div
+    key={index}
+    ref={el => slidesRef.current[index] = el}
+    className="min-h-screen w-full flex items-center justify-center p-4 md:p-8 bg-white"
+  >
+    <div 
+      className={`w-full max-w-5xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-12 transform transition-all duration-1000
+      ${activeSlide === index 
+        ? 'opacity-100 translate-y-0' 
+        : 'opacity-50 translate-y-8'
+      }`}
+    >
+      <div className="flex flex-col items-center space-y-8">
+        <div className="text-4xl md:text-6xl">{section.icon}</div>
+        
+        <div className="text-center">
+          <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-2">{section.title}</h1>
+          <h2 className="text-lg md:text-xl text-gray-600">{section.subtitle}</h2>
         </div>
-      ))}
+        
+        <p className="text-base md:text-lg text-gray-700 leading-relaxed text-center max-w-2xl">
+          {section.content}
+        </p>
+
+        {section.chart && (
+          <div className="w-full mt-8 h-[400px]">
+            {section.chart}
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+))}
     </div>
   );
 };
