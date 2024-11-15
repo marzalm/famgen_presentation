@@ -4,14 +4,8 @@ import SurveyPresentation from '../components/SurveyPresentation';
 
 export default function Home() {
   return (
-    <main>
+    <div className="w-full min-h-screen bg-white">
       <SurveyPresentation />
-    </main>
+    </div>
   );
-}
-
-// Add metadata
-export const metadata = {
-  title: 'Family Survey Presentation',
-  description: 'Results of the family survey',
 }
