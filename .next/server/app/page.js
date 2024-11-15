@@ -225,19 +225,19 @@ const routeModule = new AppPageRouteModule({
 
 /***/ }),
 
-/***/ 93359:
+/***/ 79128:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 31232, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 52987, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 50831, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 56926, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 44282, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 16505, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 31232, 23))
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 16505, 23))
 
 /***/ }),
 
-/***/ 51474:
+/***/ 73812:
 /***/ (() => {
 
 
@@ -604,37 +604,39 @@ const SurveyPresentation = ()=>{
                     })
                 ]
             }),
+            "// Dans la section des slides, mettez \xe0 jour le style:",
             sections.map((section, index)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
                     ref: (el)=>slidesRef.current[index] = el,
-                    className: "min-h-screen flex items-center justify-center p-8",
+                    className: "min-h-screen w-full flex items-center justify-center p-4 md:p-8 bg-white",
                     children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: `max-w-5xl w-full bg-white rounded-2xl shadow-xl p-12 transform transition-all duration-1000 ${activeSlide === index ? "opacity-100 translate-y-0" : "opacity-50 translate-y-8"}`,
+                        className: `w-full max-w-5xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-12 transform transition-all duration-1000
+      ${activeSlide === index ? "opacity-100 translate-y-0" : "opacity-50 translate-y-8"}`,
                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                             className: "flex flex-col items-center space-y-8",
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: "text-6xl",
+                                    className: "text-4xl md:text-6xl",
                                     children: section.icon
                                 }),
                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                     className: "text-center",
                                     children: [
                                         /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                                            className: "text-4xl font-bold text-gray-900 mb-2",
+                                            className: "text-2xl md:text-4xl font-bold text-gray-900 mb-2",
                                             children: section.title
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                                            className: "text-xl text-gray-600",
+                                            className: "text-lg md:text-xl text-gray-600",
                                             children: section.subtitle
                                         })
                                     ]
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                    className: "text-lg text-gray-700 leading-relaxed text-center max-w-2xl",
+                                    className: "text-base md:text-lg text-gray-700 leading-relaxed text-center max-w-2xl",
                                     children: section.content
                                 }),
                                 section.chart && /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: "w-full mt-8",
+                                    className: "w-full mt-8 h-[400px]",
                                     children: section.chart
                                 })
                             ]

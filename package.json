@@ -7,9 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "clean": "rd /s /q .next && rd /s /q out",
-    "deploy": "next build && type nul > out/.nojekyll && gh-pages -d out"
+    "clean": "if exist .next rd /s /q .next && if exist out rd /s /q out",
+    "deploy": "npm run clean && next build && type nul > out/.nojekyll && npx gh-pages -d out --dotfiles true --remove \"!.nojekyll\""
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.4",
