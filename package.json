@@ -2,13 +2,13 @@
   "name": "family-survey-presentation",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://[YOUR_USERNAME].github.io/family-survey-presentation",
+  "homepage": "https://marzalm.github.io/family-survey-presentation",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && touch out/.nojekyll && gh-pages -d out"
+    "deploy": "next build && type nul > out/.nojekyll && gh-pages -d out"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.4",
